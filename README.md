@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# Justice for Fakelandia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+The faraway country of Fakelandia has decided to modernise their justice system with a fancy new technology: "websites".
 
-In the project directory, you can run:
+Fakelandia is a happy place with a low crime rate, but it's important to each citizen that justice is seen to be served, so they'd like a website to keep abreast of the latest justice developments - and they've specifically asked for YOU to help out.
 
-### `npm start`
+*This lab won't lead you step-by-step through each line of code*, but it will lead you through all of the stages of building the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You're going to be building the app entirely from scratch, so you'll get to use your own creativity to decide what a good solution looks like as you bring the designs to life.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is your chance to show off everything you've learned about building React applications, so feel free to be creative and have some fun. 
 
-### `npm test`
+Remember the importance of:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Writing tests for your components
+* Using BEM to write scalable, reusable CSS
+* Keeping your components small and refactoring them into sub-components where necessary
+* Using hooks to store state, make API calls, and pass data down to sub-components through contexts
 
-### `npm run build`
+## Crimes and Misdemeanours
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Fakelandians have asked for a site that lets them browse lists of crimes committed today, and also for functionality that helps citizens confess to their own crimes. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As a non-citizen, you might not be aware that there are only four possible crimes in Fakelandia:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Mild Public Rudeness
+* Speaking in a Lift
+* Not Eating Your Vegetables
+* Supporting Manchester United
 
-### `npm run eject`
+Despite the clear severity of some of these awful crimes, the Fakelandians refer to them all as "misdemeanours".
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Creating your application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To create your application, run the following command in an empty folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npx create-react-app . --template typescript 
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Note: If you run into problems i.e. 
 
-## Learn More
+    "You are running `create-react-app` 4.0.3, which is behind the latest release (5.0.0).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    We no longer support global installation of Create React App."
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Try the command 
+
+```
+npx create-react-app@latest {Your project name} --template typescript
+```
+
+
+This will setup a fresh React app for you, with everything for TypeScript already enabled.
+
+Followed by:
+
+```
+npm start & npm test
+```
+
+You should then be able to access the default application by opening the browser and visiting
+
+[http://localhost:3000](http://localhost:3000)
+
+## Let's get started
+
+Time to start building the app the Fakelandians want. Let's start with the homepage in [activity 1](./docs/activity_1.md).

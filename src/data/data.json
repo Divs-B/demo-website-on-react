@@ -1,0 +1,30 @@
+{
+    "textBox_subject":{
+    "id": "subject",
+    "title": "Subject",
+    "min": "10",
+    "max": "50",
+    "pattern": "^[a-zA-Z ]+$",
+    "displayError": false,
+    "errMessage": "Error - Please follow the rules : Enter only alphabets, atleast 10 characters and maximum 50 characters!"
+  },
+  "selectBox_reasonOfContact": {
+    "id": "reasonOfContact",
+    "title": "Reason For Contact",    
+    "option1":"rudeness",
+    "option2":"vegetables",
+    "option3":"lift",
+    "option4":"united",
+    "option5":"I just want to talk",
+    "displayError": false,
+    "errMessage": "No Error"
+  },
+  "textAreaBox_confessionDetail":{
+    "id": "confessionDetail",
+    "title": "Confession Detail",
+    "min": 10,
+    "max": 200,
+    "displayError": false,
+    "errMessage": "Error - Please follow the rules : Enter atleast 10 characters and maximum 200 characters!"
+  }
+}
